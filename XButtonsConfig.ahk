@@ -1,5 +1,31 @@
 ; https://www.autohotkey.com/docs/KeyList.htm
 
+; txt := "shift-a ^U"
+; toggle	:= 1
+; TrayTip, , %toggle%, , 1
+
+; return
+
+; #If toggle
+;     ^a:: ^U
+; #If
+
+; return
+
+; if toggle{
+;     txt := "shift-a ^U"
+; }else{
+;     txt := "shift-a no map"
+; }
+
+; return 
+
+; F1::
+; 	toggle := !toggle
+;     ; TrayTip, , %toggle%, , 17
+
+; return 
+
 WheelLeft::Send {Media_Prev}
 
 return
@@ -55,19 +81,3 @@ return
 XButton2 & RButton:: Send ^m
 
 return
-
-^a:: Send ^U
-
-return
-
-; ^F1::
-;     toggle := !toggle
-;     if (toggle = 1) {
-;         txt := "Side buttons set to Page Navigation"
-;     } else {
-;         txt := "Side buttons set to Read Aloud and mute"
-;     }
-;     TrayTip, , %txt%, , 17
-    
-    
-    
